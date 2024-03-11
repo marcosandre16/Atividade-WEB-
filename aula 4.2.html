@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Versão 2</title>
+</head>
+
+<body style="font-size: 20px;">
+
+    <button onclick="alterar();">Trocar texto</button>
+
+    <h2 id="título">Exemplo 2 - DOM</h2> <br>
+    <img id="img1" src="img/escola.jpg" width="200px"> <br>
+    <img id="img2" src="img/mar.jpg" width="200px">
+
+    <script>
+
+        function alterar() {
+        const elemento1 = document.getElementById('img1');
+
+        const elemento2 = document.getElementById('img2');
+
+        let troca = elemento2.src;
+
+        document.getElementById('img2').src = elemento1.src;
+
+        document.getElementById('img1').src = troca;
+
+        }
+        
+    </script>
+
+</body>
+</html>
